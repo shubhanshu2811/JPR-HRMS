@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jpr.AddEmploye">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_addemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textColor="@color/blue"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:padding="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_entrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:background="@drawable/edit_round"
+            android:maxLength="10"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:layout_below="@id/tv_addemp"
+            android:layout_marginTop="90dp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_mobno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No."
+            android:background="@drawable/edit_round"
+            android:maxLength="10"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textSize="25sp"
+            android:layout_below="@+id/et_entrname"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abc@xyz.com"
+            android:maxLength="15"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_round"
+            android:layout_below="@+id/et_mobno"
+            android:id="@+id/et_entremail"
+            />
+        <LinearLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_entremail"
+            android:background="@drawable/edit_round"
+            android:layout_margin="15dp"
+            >
+
+        <Spinner
+            android:id="@+id/spinnerDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:entries="@array/designation"
+            />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_entraddrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:maxLength="15"
+            android:background="@drawable/edit_round"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:layout_below="@+id/spinnerLayout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_round"
+            android:layout_below="@+id/et_entraddrs">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:padding="10dp"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_gendermale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="male"
+                    android:checked="true"
+                    android:textSize="16dp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_genderfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="female"
+                    android:textSize="16dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/et_entraddrs"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

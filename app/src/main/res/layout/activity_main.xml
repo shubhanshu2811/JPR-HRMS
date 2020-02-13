@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jpr.Login_Activity">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jprlogo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HRMS"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textSize="40dp"
+            android:textColor="@color/orange"
+            android:background="@drawable/title_circle"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_emp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:hint="Emp. ID"
+                android:textSize="15sp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_action_person"
+                android:padding="10dp"
+                android:maxLength="15"
+                android:pointerIcon="arrow"
+
+                />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_emp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:hint="Password"
+                android:textSize="15sp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/ic_action_lock"
+                android:padding="10dp"
+                android:inputType="number"
+                android:maxLength="15"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            android:background="@drawable/button_round"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tv_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin"
+                android:layout_margin="25dp"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:background="@drawable/button_round"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
+
+

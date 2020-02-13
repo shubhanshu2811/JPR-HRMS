@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jpr_hrms">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".jpr.AdminEmployeeDetails"></activity>
+        <activity android:name=".jpr.Employe_Menu" />
+        <activity android:name=".jpr.AddEmploye" />
+        <activity android:name=".jpr.AdminMenu" />
+        <activity android:name=".jpr.AdminLoginActivity" />
+        <activity
+            android:name=".jpr.Login_Activity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".jpr.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
